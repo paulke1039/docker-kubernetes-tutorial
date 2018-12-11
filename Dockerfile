@@ -4,6 +4,8 @@ WORKDIR /sandbox/learningdocker
 
 COPY package.json .
 
+COPY package-lock.json .
+
 RUN npm install
 
 COPY . .
